@@ -26,6 +26,8 @@
 [![github/repo-size](https://shields.io/github/repo-size/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt)
 [![github/v](https://shields.io/github/v/release/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt)
 
+[![cpan/v](https://img.shields.io/cpan/v/Reply-Plugin-Prompt)](https://metacpan.org/pod/Reply::Plugin::Prompt)
+
 [Reply](https://metacpan.org/pod/Reply) plugin for
 [powerlevel10k](https://github.com/romkatv/powerlevel10k) style prompt.
 It is an enhancement of
@@ -61,7 +63,7 @@ make dist
 ### Section Order
 
 ```perl
-@sections       = ( 'result', 'os', 'version', 'path', 'time' );
+@sections = ( 'result', 'os', 'version', 'path', 'time' );
 ```
 
 ### Section Colors
@@ -79,13 +81,13 @@ make dist
 ### Section Separator
 
 ```perl
-$sep            = '';
+$sep = '';
 ```
 
 ### Whitespaces Which Padded Around Section Text
 
 ```perl
-$insert_text    = '" $text "';
+$insert_text = '" $text "';
 ```
 
 ### Section Text
@@ -111,12 +113,9 @@ $prompt_char = '❯ ';
 
 ### Configuration File
 
-The configuration file is `~/.config/reply/prompt.pl`.
-This is the
-[standard configuration path](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)
-of Linux. Because there is no library for perl to provide the function of
-[platformdirs](https://pypi.org/project/platformdirs/)
-so use this path as a temporarily.
+The configuration file path respects
+[XDG](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html),
+which is `${XDG_CONFIG_PATH:-$HOME/.config}/reply/prompt.pl`.
 
 ## Similar Prompts
 

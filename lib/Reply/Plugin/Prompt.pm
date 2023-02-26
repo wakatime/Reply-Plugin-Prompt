@@ -1,10 +1,12 @@
 package Reply::Plugin::Prompt;
 use strict;
 use warnings;
-use Cwd   qw(abs_path getcwd);
-use Env   qw(HOME);
-use POSIX qw(strftime);
+use experimental qw(try);
+use Cwd          qw(abs_path getcwd);
+use Env          qw(HOME);
+use POSIX        qw(strftime);
 use Term::ANSIColor;
+use File::XDG;
 use base 'Reply::Plugin';
 
 BEGIN {
@@ -91,7 +93,7 @@ sub section_time {
 ### Config
 ### Section Order
 
-my @sections       = ( 'result', 'os', 'version', 'path', 'time' );
+my @sections = ( 'result', 'os', 'version', 'path', 'time' );
 
 ### Section Colors
 
@@ -105,11 +107,11 @@ my %section_colors = (
 
 ### Section Separator
 
-my $sep            = '';
+my $sep = '';
 
 ### Whitespaces Which Padded Around Section Text
 
-my $insert_text    = '" $text "';
+my $insert_text = '" $text "';
 
 ### Section Text
 
@@ -128,15 +130,12 @@ my $prompt_char = '❯ ';
 
 ### Config
 
-my $config = "$HOME/.config/reply/prompt.pl";
-if ( -f $config ) {
-    if ( open my $in, "< $config" ) {
-        my $code = <$in>;
-        eval $code if defined $code;
-    }
-    else {
-        warn "Cannot read $config!";
-    }
+my $xdg = File::XDG->new( name => 'reply', api => 1 );
+try {
+    my $config = $xdg->config_home->child('prompt.pl')->slurp_utf8;
+    eval $config;
+}
+catch ($err) {
 }
 
 # these information will not change so source them once.
@@ -200,7 +199,8 @@ sub prompt {
       . color("reset $last_bg")
       . $sep
       . color('reset') . "\n"
-      . $self->{counter} . $prompt_char;
+      . $self->{counter}
+      . $prompt_char;
 }
 
 sub loop {
