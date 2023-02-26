@@ -11,5 +11,7 @@ sleep 1;
 print $exp "chomp \$name\n";
 sleep 1;
 print $exp 'print "hello, my name is $name\n"' . "\n";
+sleep 1;
+print $exp "`wrong command`\n";
 
 $exp->soft_close();

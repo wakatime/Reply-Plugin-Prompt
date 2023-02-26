@@ -26,16 +26,98 @@
 [![github/repo-size](https://shields.io/github/repo-size/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt)
 [![github/v](https://shields.io/github/v/release/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt)
 
-[Reply](https://github.com/doy/reply) plugin for
+[Reply](https://metacpan.org/pod/Reply) plugin for
 [powerlevel10k](https://github.com/romkatv/powerlevel10k) style prompt.
+It is an enhancement of
+[Reply::Plugin::FancyPrompt](https://metacpan.org/pod/Reply::Plugin::FancyPrompt).
 
-![screenshot](https://user-images.githubusercontent.com/32936898/221395787-e3460908-361f-41e0-a9e4-d2851703d5bf.jpg)
+Your perl deserves a beautiful REPL.
+
+![screenshot](https://user-images.githubusercontent.com/32936898/221406537-5c9222e2-23ed-423c-9860-671b06421aef.jpg)
+
+## Install
+
+```bash
+cpan Reply::Plugin::Prompt
+```
+
+Enable this plugin in your `~/.replyrc`:
+
+```dosini
+[Prompt]
+```
 
 ## Build
 
-```sh
+```bash
 ./Makefile.PL
 cp MANIFEST.SKIP.bak MANIFEST.SKIP
 make manifest
 make dist
 ```
+
+## Configure
+
+### Section Order
+
+```perl
+@sections       = ( 'result', 'os', 'version', 'path', 'time' );
+```
+
+### Section Colors
+
+```perl
+%section_colors = (
+    'result'  => 'yellow on_red',
+    'os'      => 'black on_yellow',
+    'version' => 'blue on_black',
+    'path'    => 'white on_blue',
+    'time'    => 'black on_white',
+);
+```
+
+### Section Separator
+
+```perl
+$sep            = '';
+```
+
+### Whitespaces Which Padded Around Section Text
+
+```perl
+$insert_text    = '" $text "';
+```
+
+### Section Text
+
+```perl
+$insert_result  = '"✘ $result"';
+$insert_version = '" $version"';
+$insert_os      = '"$os"';
+$insert_time    = '" $time"';
+```
+
+### Time Format
+
+```perl
+$time_format = '%H:%M:%S';
+```
+
+### Prompt Character
+
+```perl
+$prompt_char = '❯ ';
+```
+
+### Configuration File
+
+The configuration file is `~/.config/reply/prompt.pl`.
+This is the
+[standard configuration path](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)
+of Linux. Because there is no library for perl to provide the function of
+[platformdirs](https://pypi.org/project/platformdirs/)
+so use this path as a temporarily.
+
+## Similar Prompts
+
+See [here](https://github.com/Freed-Wu/my-dotfiles/wiki).
