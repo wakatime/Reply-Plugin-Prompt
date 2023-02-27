@@ -87,16 +87,16 @@ $sep = '';
 ### Whitespaces Which Padded Around Section Text
 
 ```perl
-$insert_text = '" $text "';
+$insert_text = ' %s ';
 ```
 
 ### Section Text
 
 ```perl
-$insert_result  = '"✘ $result"';
-$insert_version = '" $version"';
-$insert_os      = '"$os"';
-$insert_time    = '" $time"';
+$insert_result  = '✘ %s';
+$insert_version = ' %s';
+$insert_os      = '%s';
+$insert_time    = ' %s';
 ```
 
 ### Time Format

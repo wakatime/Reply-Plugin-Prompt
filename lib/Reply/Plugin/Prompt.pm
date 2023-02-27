@@ -111,14 +111,14 @@ my $sep = '';
 
 ### Whitespaces Which Padded Around Section Text
 
-my $insert_text = '" $text "';
+my $insert_text = ' %s ';
 
 ### Section Text
 
-my $insert_result  = '"✘ $result"';
-my $insert_version = '" $version"';
-my $insert_os      = '"$os"';
-my $insert_time    = '" $time"';
+my $insert_result  = '✘ %s';
+my $insert_version = ' %s';
+my $insert_os      = '%s';
+my $insert_time    = ' %s';
 
 ### Time Format
 
@@ -141,8 +141,8 @@ catch ($err) {
 # these information will not change so source them once.
 my $os      = section_os;
 my $version = section_version;
-$insert_version = eval $insert_version;
-$insert_os      = eval $insert_os;
+$insert_version = sprintf($insert_version, $version);
+$insert_os      = sprintf($insert_os, $os);
 
 sub prompt {
     my $self = shift;
@@ -167,14 +167,14 @@ sub prompt {
     foreach my $section (@new_sections) {
         my $text = '';
         if ( $section eq 'result' ) {
-            $text = eval $insert_result;
+            $text = sprintf($insert_result, $result);
         }
         elsif ( $section eq 'path' ) {
             $text = section_path;
         }
         elsif ( $section eq 'time' ) {
             my $time = section_time $time_format;
-            $text = eval $insert_time;
+            $text = sprintf($insert_time, $time);
         }
         elsif ( $section eq 'os' ) {
             $text = $insert_os;
@@ -190,7 +190,7 @@ sub prompt {
             my ($bg) = $color =~ /(?<=on_)(\S+)/g;
             $ps1 .= color("$last_bg on_$bg") . $sep;
         }
-        $ps1 .= color($color) . eval($insert_text);
+        $ps1 .= color($color) . sprintf($insert_text, $text);
         ($last_bg) = $color =~ /(?<=on_)(\S+)/g;
     }
     return
