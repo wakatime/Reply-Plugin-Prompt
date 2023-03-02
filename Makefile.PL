@@ -1,8 +1,10 @@
 #!/usr/bin/env perl
 use ExtUtils::MakeMaker;
 
-my $VERSION = `git describe`;
+# https://github.com/actions/checkout/issues/1190
+my $VERSION = `git tag`;
 chomp $VERSION;
+$VERSION =~ s/.*\n//g;
 
 WriteMakefile(
     NAME          => 'Reply::Plugin::Prompt',
