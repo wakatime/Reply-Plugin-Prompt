@@ -1,5 +1,29 @@
 # Changelog
 
+<a name="0.0.8"></a>
+## 0.0.8 (2023-03-04)
+
+### Fixed
+
+- 🐛 Fix github release [[fc9ecd5](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/fc9ecd5b0d31d71aae42ec36889478b96182771e)]
+
+
+<a name="0.0.7"></a>
+## 0.0.7 (2023-03-04)
+
+### Fixed
+
+- 💚 Fix github action&#x27;s fetch-depth [[13e84a8](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/13e84a85c0a5128916a9270d262fdc54e4992909)]
+
+
+<a name="0.0.6"></a>
+## 0.0.6 (2023-03-04)
+
+### Miscellaneous
+
+- 📝 Add changelog [[670cfe2](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/670cfe2d3e0499ef7df23ee33e2c8f0649028203)]
+
+
 <a name="0.0.5"></a>
 ## 0.0.5 (2023-03-02)
 
