@@ -8,6 +8,9 @@ use POSIX        qw(strftime);
 use Term::ANSIColor;
 use File::XDG;
 use base 'Reply::Plugin';
+use Exporter qw(import);
+our @EXPORT =
+  qw(section_result section_path section_os section_version section_time);
 
 BEGIN {
     if ( $^O eq 'MSWin32' ) {
@@ -141,8 +144,8 @@ catch ($err) {
 # these information will not change so source them once.
 my $os      = section_os;
 my $version = section_version;
-$insert_version = sprintf($insert_version, $version);
-$insert_os      = sprintf($insert_os, $os);
+$insert_version = sprintf( $insert_version, $version );
+$insert_os      = sprintf( $insert_os,      $os );
 
 sub prompt {
     my $self = shift;
@@ -167,14 +170,14 @@ sub prompt {
     foreach my $section (@new_sections) {
         my $text = '';
         if ( $section eq 'result' ) {
-            $text = sprintf($insert_result, $result);
+            $text = sprintf( $insert_result, $result );
         }
         elsif ( $section eq 'path' ) {
             $text = section_path;
         }
         elsif ( $section eq 'time' ) {
             my $time = section_time $time_format;
-            $text = sprintf($insert_time, $time);
+            $text = sprintf( $insert_time, $time );
         }
         elsif ( $section eq 'os' ) {
             $text = $insert_os;
@@ -190,7 +193,7 @@ sub prompt {
             my ($bg) = $color =~ /(?<=on_)(\S+)/g;
             $ps1 .= color("$last_bg on_$bg") . $sep;
         }
-        $ps1 .= color($color) . sprintf($insert_text, $text);
+        $ps1 .= color($color) . sprintf( $insert_text, $text );
         ($last_bg) = $color =~ /(?<=on_)(\S+)/g;
     }
     return
