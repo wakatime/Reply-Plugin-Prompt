@@ -81,7 +81,3 @@ repos:
         args:
           - Makefile.PL
           - package.json
-
-ci:
-  skip:
-    - make

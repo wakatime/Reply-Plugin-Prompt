@@ -3,6 +3,14 @@
 <a name="next"></a>
 ## next
 
+### Fixed
+
+- 💚 Fix pre-commit.ci [[bc714a0](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/bc714a00289a09d894e10a626d2e1ebaab9d8e02)]
+
+
+<a name="0.0.9"></a>
+## 0.0.9 (2023-03-10)
+
 ### Added
 
 - 👷‍♂️ Change cpan to cpanm [[e34fdc0](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/e34fdc00b6b4a98ae87719e8fc4d91d67bbb40d7)]
@@ -14,9 +22,13 @@
 - 👽 Remove File::XDG from PREREQ_PM [[6ad0f5c](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/6ad0f5c74ceb231186b1170848d9cb52a369f2e6)]
 - 👽 Fix version of File::XDG [[2a842d0](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/2a842d08b9bc30ee5f1358a066009217229987db)]
 
+### Fixed
+
+- 💚 Fix typo of github workflow [[ba25741](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/ba2574109b91ecffc54097ce9894b9a993976ea5)]
+
 ### Miscellaneous
 
-- 📝 Add pod [[befb5d3](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/befb5d35aaeed8785cd7e72da873eb2b0279277e)]
+- 📝 Add pod [[dc4de10](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/dc4de10bc3a3f452fba38f3fcef919a1d9b26d56)]
 - 📝 Add AUR to README.md [[380ee15](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/380ee157fe9acf61b471b476cc49e03fece0be47)]
 
 
