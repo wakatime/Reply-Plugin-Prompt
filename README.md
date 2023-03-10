@@ -41,14 +41,16 @@ Your perl deserves a beautiful REPL.
 
 ## Install
 
+### [CPAN](https://metacpan.org/pod/Reply::Plugin::Prompt)
+
 ```bash
 cpan Reply::Plugin::Prompt
 ```
 
-Enable this plugin in your `~/.replyrc`:
+### [AUR](https://aur.archlinux.org/packages/perl-reply-plugin-prompt)
 
-```dosini
-[Prompt]
+```bash
+yay -S perl-reply-plugin-prompt
 ```
 
 ## Build
@@ -117,6 +119,14 @@ $prompt_char = '❯ ';
 The configuration file path respects
 [XDG](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html),
 which is `${XDG_CONFIG_PATH:-$HOME/.config}/reply/prompt.pl`.
+
+### Enable
+
+Enable this plugin in your `~/.replyrc`:
+
+```dosini
+[Prompt]
+```
 
 ## Similar Prompts
 
