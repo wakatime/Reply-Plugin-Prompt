@@ -53,80 +53,9 @@ cpan Reply::Plugin::Prompt
 yay -S perl-reply-plugin-prompt
 ```
 
-## Build
-
-```bash
-./Makefile.PL
-make manifest
-make dist
-```
-
 ## Configure
 
-### Section Order
-
-```perl
-@sections = ( 'result', 'os', 'version', 'path', 'time' );
-```
-
-### Section Colors
-
-```perl
-%section_colors = (
-    'result'  => 'yellow on_red',
-    'os'      => 'black on_yellow',
-    'version' => 'blue on_black',
-    'path'    => 'white on_blue',
-    'time'    => 'black on_white',
-);
-```
-
-### Section Separator
-
-```perl
-$sep = '';
-```
-
-### Whitespaces Which Padded Around Section Text
-
-```perl
-$insert_text = ' %s ';
-```
-
-### Section Text
-
-```perl
-$insert_result  = '✘ %s';
-$insert_version = ' %s';
-$insert_os      = '%s';
-$insert_time    = ' %s';
-```
-
-### Time Format
-
-```perl
-$time_format = '%H:%M:%S';
-```
-
-### Prompt Character
-
-```perl
-$prompt_char = '❯ ';
-```
-
-### Configuration File
-
-The configuration file path respects
-[XDG](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html),
-which is `${XDG_CONFIG_PATH:-$HOME/.config}/reply/prompt.pl`.
-
-### Enable
-
-Enable this plugin in your `~/.replyrc`:
-
-```dosini
-[Prompt]
-```
+See <https://metacpan.org/pod/Reply::Plugin::Prompt>.
 
 ## Similar Prompts
 

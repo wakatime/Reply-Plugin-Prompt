@@ -73,9 +73,6 @@ repos:
   - repo: https://github.com/Freed-Wu/pre-commit-hooks
     rev: 0.0.9
     hooks:
-      - id: make
-        args:
-          - README.md
       - id: update-package.json
         args:
           - Makefile.PL

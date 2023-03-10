@@ -6,7 +6,6 @@ use Cwd          qw(abs_path getcwd);
 use Env          qw(HOME);
 use POSIX        qw(strftime);
 use Term::ANSIColor;
-use File::XDG;
 use base 'Reply::Plugin';
 use Exporter qw(import);
 our @EXPORT =
@@ -93,12 +92,7 @@ sub section_time {
     return strftime( shift, localtime );
 }
 
-### Config
-### Section Order
-
 my @sections = ( 'result', 'os', 'version', 'path', 'time' );
-
-### Section Colors
 
 my %section_colors = (
     'result'  => 'yellow on_red',
@@ -108,33 +102,22 @@ my %section_colors = (
     'time'    => 'black on_white',
 );
 
-### Section Separator
-
 my $sep = '';
 
-### Whitespaces Which Padded Around Section Text
-
 my $insert_text = ' %s ';
-
-### Section Text
 
 my $insert_result  = '✘ %s';
 my $insert_version = ' %s';
 my $insert_os      = '%s';
 my $insert_time    = ' %s';
 
-### Time Format
-
 my $time_format = '%H:%M:%S';
-
-### Prompt Character
 
 my $prompt_char = '❯ ';
 
-### Config
-
-my $xdg = File::XDG->new( name => 'reply', api => 1 );
 try {
+    require File::XDG;
+    my $xdg    = File::XDG->new( name => 'reply', api => 1 );
     my $config = $xdg->config_home->child('prompt.pl')->slurp_utf8;
     eval $config;
 }
@@ -224,4 +207,21 @@ Reply::Plugin::Prompt - reply plugin for powerlevel10k style prompt
 
 =head1 DESCRIPTION
 
-See README.md for screenshots.
+L<Reply> plugin for L<powerlevel10k|https://github.com/romkatv/powerlevel10k>
+style prompt. It is an enhancement of L<Reply::Plugin::FancyPrompt>.
+
+Your perl deserves a beautiful REPL. See
+L<README.md|https://github.com/Freed-Wu/Reply-Plugin-Prompt> for screenshots.
+
+=head1 CONFIGURE
+
+=head2 ENABLE
+
+Enable this plugin in your F<~/.replyrc>:
+
+    [Prompt]
+
+=head2 CUSTOMIZE
+
+Install L<File::XDG> > 1.00, then edit
+F<${XDG_CONFIG_PATH:-$HOME/.config}/reply/prompt.pl>:

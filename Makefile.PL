@@ -20,7 +20,6 @@ WriteMakefile(
     VERSION       => $version,
     ABSTRACT_FROM => 'lib/Reply/Plugin/Prompt.pm',
     PREREQ_PM     => {
-        'Reply'     => '0',
-        'File::XDG' => '1.00',
+        'Reply' => '0',
     },
 );
