@@ -13,15 +13,43 @@ permissions:
   contents: write
 
 jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        runs-on:
+          - ubuntu-latest
+          - macos-latest
+    runs-on: ${{ matrix.runs-on }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: shogo82148/actions-setup-perl@v1
+      - name: Install Dependencies
+        run: |
+          cpan File::XDG
+      - name: Install
+        run: |
+          ./Makefile.PL
+          make manifest
+          make install
+      - name: Install Requirements
+        run: |
+          cpan Devel::Cover Devel::Cover::Report::Codecovbash
+      - name: Test
+        run: |
+          make test
+          cover -test -report codecovbash
+      - uses: codecov/codecov-action@v3
+
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - uses: actions/checkout@v3
       - uses: shogo82148/actions-setup-perl@v1
       - name: Build
         run: |
           ./Makefile.PL
-          cp MANIFEST.SKIP.bak MANIFEST.SKIP
           make manifest
           make dist
       - uses: actions/upload-artifact@v3

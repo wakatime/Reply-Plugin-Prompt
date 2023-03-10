@@ -1,7 +1,9 @@
 #!/usr/bin/env perl
 use Env qw(GITHUB_REF_NAME);
+use File::Copy 'cp';
 use ExtUtils::MakeMaker;
 
+cp( 'MANIFEST.SKIP.bak', 'MANIFEST.SKIP' );
 unless ( $GITHUB_REF_NAME eq '' ) {
     $version = $GITHUB_REF_NAME;
 }

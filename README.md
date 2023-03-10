@@ -1,6 +1,8 @@
 # Reply-Plugin-Prompt
 
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/Freed-Wu/Reply-Plugin-Prompt/main.svg)](https://results.pre-commit.ci/latest/github/Freed-Wu/Reply-Plugin-Prompt/main)
+[![github/workflow](https://github.com/Freed-Wu/Reply-Plugin-Prompt/actions/workflows/main.yml/badge.svg)](https://github.com/Freed-Wu/Reply-Plugin-Prompt/actions)
+[![codecov](https://codecov.io/gh/Freed-Wu/Reply-Plugin-Prompt/branch/main/graph/badge.svg)](https://codecov.io/gh/Freed-Wu/Reply-Plugin-Prompt)
 
 [![github/downloads](https://shields.io/github/downloads/Freed-Wu/Reply-Plugin-Prompt/total)](https://github.com/Freed-Wu/Reply-Plugin-Prompt/releases)
 [![github/downloads/latest](https://shields.io/github/downloads/Freed-Wu/Reply-Plugin-Prompt/latest/total)](https://github.com/Freed-Wu/Reply-Plugin-Prompt/releases/latest)
@@ -53,7 +55,6 @@ Enable this plugin in your `~/.replyrc`:
 
 ```bash
 ./Makefile.PL
-cp MANIFEST.SKIP.bak MANIFEST.SKIP
 make manifest
 make dist
 ```
