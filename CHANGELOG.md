@@ -5,7 +5,11 @@
 
 ### Fixed
 
-- 💚 Fix pre-commit.ci [[bc714a0](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/bc714a00289a09d894e10a626d2e1ebaab9d8e02)]
+- 💚 Fix pre-commit.ci [[8e43f2f](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/8e43f2fff90a806a51c28f94859e2e489d7f0f11)]
+
+### Miscellaneous
+
+- 📝 Add man to README.md [[f99453a](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/f99453a7816003ab43a22b80fdb46259eb3fad3c)]
 
 
 <a name="0.0.9"></a>

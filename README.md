@@ -55,7 +55,7 @@ yay -S perl-reply-plugin-prompt
 
 ## Configure
 
-See <https://metacpan.org/pod/Reply::Plugin::Prompt>.
+[`perldoc Reply::Plugin::Prompt`](https://metacpan.org/pod/Reply::Plugin::Prompt).
 
 ## Similar Prompts
 
