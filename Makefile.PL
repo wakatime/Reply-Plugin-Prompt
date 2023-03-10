@@ -4,14 +4,14 @@ use File::Copy 'cp';
 use ExtUtils::MakeMaker;
 
 cp 'MANIFEST.SKIP.bak', 'MANIFEST.SKIP';
-unless ( $GITHUB_REF_NAME eq '' ) {
+if ( defined $GITHUB_REF_NAME ) {
     $VERSION = $GITHUB_REF_NAME;
 }
 else {
     $VERSION = `git describe --abbrev=0`;
     chomp $VERSION;
-    $VERSION = '0.0.0' if $VERSION eq '';
 }
+$VERSION = '0.0.0' if $VERSION eq '';
 
 WriteMakefile(
     NAME          => 'Reply::Plugin::Prompt',
