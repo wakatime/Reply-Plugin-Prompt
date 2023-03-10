@@ -3,5 +3,5 @@
 ^MANIFEST\.SKIP$
 ^\..*
 ^package\.json$
-^Reply-Plugin-Prompt-
 ^scripts/
+^Reply-Plugin-Prompt-

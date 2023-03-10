@@ -71,8 +71,12 @@ repos:
         additional_dependencies:
           - markdown-it-texmath@0.9.1
   - repo: https://github.com/Freed-Wu/pre-commit-hooks
-    rev: 0.0.9
+    rev: 0.0.10
     hooks:
+      - id: sh
+        entry: scripts/update-Prompt.pm.pl
+        args:
+          - lib/Reply/Plugin/Prompt.pm
       - id: update-package.json
         args:
           - Makefile.PL

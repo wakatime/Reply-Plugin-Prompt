@@ -3,21 +3,21 @@ use Env qw(GITHUB_REF_NAME);
 use File::Copy 'cp';
 use ExtUtils::MakeMaker;
 
-cp( 'MANIFEST.SKIP.bak', 'MANIFEST.SKIP' );
+cp 'MANIFEST.SKIP.bak', 'MANIFEST.SKIP';
 unless ( $GITHUB_REF_NAME eq '' ) {
-    $version = $GITHUB_REF_NAME;
+    $VERSION = $GITHUB_REF_NAME;
 }
 else {
-    $version = `git describe --abbrev=0`;
-    chomp $version;
-    $version = '0.0.0' if $version eq '';
+    $VERSION = `git describe --abbrev=0`;
+    chomp $VERSION;
+    $VERSION = '0.0.0' if $VERSION eq '';
 }
 
 WriteMakefile(
     NAME          => 'Reply::Plugin::Prompt',
     LICENSE       => 'gpl_3',
     AUTHOR        => 'Wu Zhenyu <wuzhenyu@ustc.edu>',
-    VERSION       => $version,
+    VERSION       => $VERSION,
     ABSTRACT_FROM => 'lib/Reply/Plugin/Prompt.pm',
     PREREQ_PM     => {
         'Reply' => '0',

@@ -1,5 +1,25 @@
 # Changelog
 
+<a name="next"></a>
+## next
+
+### Added
+
+- 👷‍♂️ Change cpan to cpanm [[e34fdc0](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/e34fdc00b6b4a98ae87719e8fc4d91d67bbb40d7)]
+- 👷‍♂️ Add CI for test coverage [[64c3244](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/64c3244c8389b303bd618f2bfcba4a241f5862bb)]
+- ✅ Add test [[7c6c4f3](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/7c6c4f32b8ae61a7514d547923a360ffb8cd60b1)]
+
+### Changed
+
+- 👽 Remove File::XDG from PREREQ_PM [[6ad0f5c](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/6ad0f5c74ceb231186b1170848d9cb52a369f2e6)]
+- 👽 Fix version of File::XDG [[2a842d0](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/2a842d08b9bc30ee5f1358a066009217229987db)]
+
+### Miscellaneous
+
+- 📝 Add pod [[befb5d3](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/befb5d35aaeed8785cd7e72da873eb2b0279277e)]
+- 📝 Add AUR to README.md [[380ee15](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/380ee157fe9acf61b471b476cc49e03fece0be47)]
+
+
 <a name="0.0.8"></a>
 ## 0.0.8 (2023-03-04)
 

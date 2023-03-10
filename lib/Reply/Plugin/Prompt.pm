@@ -18,6 +18,23 @@ BEGIN {
     }
 }
 
+my @sections = ( 'result', 'os', 'version', 'path', 'time' );    # section order
+my %section_colors = (    # section colors
+    'result'  => 'yellow on_red',
+    'os'      => 'black on_yellow',
+    'version' => 'blue on_black',
+    'path'    => 'white on_blue',
+    'time'    => 'black on_white',
+);
+my $sep            = '';         # section separator
+my $insert_text    = ' %s ';      # whitespaces which padded around section text
+my $insert_result  = '✘ %s';
+my $insert_version = ' %s';
+my $insert_os      = '%s';
+my $insert_time    = ' %s';
+my $time_format    = '%H:%M:%S';  # time format
+my $prompt_char    = '❯ ';        # prompt character
+
 sub new {
     my $class = shift;
     my $self  = $class->SUPER::new(@_);
@@ -91,29 +108,6 @@ sub section_version {
 sub section_time {
     return strftime( shift, localtime );
 }
-
-my @sections = ( 'result', 'os', 'version', 'path', 'time' );
-
-my %section_colors = (
-    'result'  => 'yellow on_red',
-    'os'      => 'black on_yellow',
-    'version' => 'blue on_black',
-    'path'    => 'white on_blue',
-    'time'    => 'black on_white',
-);
-
-my $sep = '';
-
-my $insert_text = ' %s ';
-
-my $insert_result  = '✘ %s';
-my $insert_version = ' %s';
-my $insert_os      = '%s';
-my $insert_time    = ' %s';
-
-my $time_format = '%H:%M:%S';
-
-my $prompt_char = '❯ ';
 
 try {
     require File::XDG;
@@ -223,5 +217,26 @@ Enable this plugin in your F<~/.replyrc>:
 
 =head2 CUSTOMIZE
 
+Install L<nerd-font|https://github.com/ryanoasis/nerd-fonts> firstly.
+
 Install L<File::XDG> > 1.00, then edit
 F<${XDG_CONFIG_PATH:-$HOME/.config}/reply/prompt.pl>:
+
+=encoding utf-8
+
+    @sections = ( 'result', 'os', 'version', 'path', 'time' );    # section order
+    %section_colors = (    # section colors
+        'result'  => 'yellow on_red',
+        'os'      => 'black on_yellow',
+        'version' => 'blue on_black',
+        'path'    => 'white on_blue',
+        'time'    => 'black on_white',
+    );
+    $sep            = '';         # section separator
+    $insert_text    = ' %s ';      # whitespaces which padded around section text
+    $insert_result  = '✘ %s';
+    $insert_version = ' %s';
+    $insert_os      = '%s';
+    $insert_time    = ' %s';
+    $time_format    = '%H:%M:%S';  # time format
+    $prompt_char    = '❯ ';        # prompt character
