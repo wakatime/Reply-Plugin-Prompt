@@ -15,7 +15,7 @@ if ( $status == 1 ) {
 elsif ( $status == 2 and /=encoding utf-8/ ) {
     $code =~ s/my //g;
     $code =~ s/^/    /gm;
-    $code   = "\n$code";
+    $code = "\n$code";
     $_ .= $code;
     $status = 3;
 }
