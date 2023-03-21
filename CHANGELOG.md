@@ -1,7 +1,16 @@
 # Changelog
 
-<a name="next"></a>
-## next
+<a name="0.0.10"></a>
+## 0.0.10 (2023-03-21)
+
+### Added
+
+- ✨ Support wakatime [[131b3db](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/131b3dbd045d052a6bfe5814c8abe53e2bfb4c9c)]
+- 👷‍♂️ Add perltidy [[317ab7f](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/317ab7fe02a4dc7b69299b641e8cd91e095508b6)]
+
+### Changed
+
+- 🎨 Remove warning about uninitialized variable [[6ef485f](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/6ef485f3ff3ff10f2fd1348806aa726f6114edb8)]
 
 ### Fixed
 
@@ -9,7 +18,7 @@
 
 ### Miscellaneous
 
-- 📝 Add man to README.md [[f99453a](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/f99453a7816003ab43a22b80fdb46259eb3fad3c)]
+- 📝 Add man to README.md [[a7a2fe3](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/a7a2fe3509f4a7b595a82e1f3a9f2b4eb0ff867f)]
 
 
 <a name="0.0.9"></a>

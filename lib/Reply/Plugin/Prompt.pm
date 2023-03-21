@@ -3,13 +3,14 @@ use strict;
 use warnings;
 use experimental qw(try);
 use Cwd          qw(abs_path getcwd);
-use Env          qw(HOME);
-use POSIX        qw(strftime);
+use File::Basename;
+use Env   qw(HOME);
+use POSIX qw(strftime);
 use Term::ANSIColor;
 use base 'Reply::Plugin';
 use Exporter qw(import);
 our @EXPORT =
-  qw(section_result section_path section_os section_version section_time);
+  qw(section_wakatime section_result section_path section_os section_version section_time);
 
 BEGIN {
     if ( $^O eq 'MSWin32' ) {
@@ -18,13 +19,15 @@ BEGIN {
     }
 }
 
-my @sections = ( 'result', 'os', 'version', 'path', 'time' );    # section order
-my %section_colors = (    # section colors
-    'result'  => 'yellow on_red',
-    'os'      => 'black on_yellow',
-    'version' => 'blue on_black',
-    'path'    => 'white on_blue',
-    'time'    => 'black on_white',
+my @sections =
+  ( 'wakatime', 'result', 'os', 'version', 'path', 'time' );    # section order
+my %section_colors = (
+    'wakatime' => '',
+    'result'   => 'yellow on_red',
+    'os'       => 'black on_yellow',
+    'version'  => 'blue on_black',
+    'path'     => 'white on_blue',
+    'time'     => 'black on_white',
 );
 my $sep            = '';         # section separator
 my $insert_text    = ' %s ';      # whitespaces which padded around section text
@@ -34,6 +37,8 @@ my $insert_os      = '%s';
 my $insert_time    = ' %s';
 my $time_format    = '%H:%M:%S';  # time format
 my $prompt_char    = '❯ ';        # prompt character
+my $wakatime_cmd =
+'wakatime-cli --write --plugin=repl-reply-wakatime --entity-type=app --entity=perl --alternate-language=perl --project=%s';
 
 sub new {
     my $class = shift;
@@ -41,6 +46,25 @@ sub new {
     $self->{counter}  = 0;
     $self->{prompted} = 0;
     return $self;
+}
+
+sub wakatime {
+    my $cmd = $wakatime_cmd;
+    if ( $cmd =~ /%s/ ) {
+        my $null    = $^O eq 'MSWin32' ? 'nul' : '/dev/null';
+        my $project = `git rev-parse --show-toplevel 2> $null`;
+        chomp $project;
+        $project = abs_path getcwd if $project eq '';
+        $project = basename $project;
+        $cmd     = sprintf( $cmd, $project );
+    }
+    system($cmd);
+}
+
+sub section_wakatime {
+    require threads;
+    my $thr = threads->new( \&wakatime );
+    $thr->detach();
 }
 
 sub section_result {
@@ -146,7 +170,11 @@ sub prompt {
     my $last_bg = '';
     foreach my $section (@new_sections) {
         my $text = '';
-        if ( $section eq 'result' ) {
+        if ( $section eq 'wakatime' ) {
+            section_wakatime;
+            next;
+        }
+        elsif ( $section eq 'result' ) {
             $text = sprintf( $insert_result, $result );
         }
         elsif ( $section eq 'path' ) {
@@ -207,6 +235,10 @@ style prompt. It is an enhancement of L<Reply::Plugin::FancyPrompt>.
 Your perl deserves a beautiful REPL. See
 L<README.md|https://github.com/Freed-Wu/Reply-Plugin-Prompt> for screenshots.
 
+Now this plugin supports L<wakatime|https://wakatime.com> which will record your
+time to use perl in L<Reply>. If you don't want it, please remove I<wakatime>
+from I<@sections>.
+
 =head1 CONFIGURE
 
 =head2 ENABLE
@@ -224,13 +256,15 @@ F<${XDG_CONFIG_PATH:-$HOME/.config}/reply/prompt.pl>:
 
 =encoding utf-8
 
-    @sections = ( 'result', 'os', 'version', 'path', 'time' );    # section order
-    %section_colors = (    # section colors
-        'result'  => 'yellow on_red',
-        'os'      => 'black on_yellow',
-        'version' => 'blue on_black',
-        'path'    => 'white on_blue',
-        'time'    => 'black on_white',
+    @sections =
+      ( 'wakatime', 'result', 'os', 'version', 'path', 'time' );    # section order
+    %section_colors = (
+        'wakatime' => '',
+        'result'   => 'yellow on_red',
+        'os'       => 'black on_yellow',
+        'version'  => 'blue on_black',
+        'path'     => 'white on_blue',
+        'time'     => 'black on_white',
     );
     $sep            = '';         # section separator
     $insert_text    = ' %s ';      # whitespaces which padded around section text
@@ -240,3 +274,5 @@ F<${XDG_CONFIG_PATH:-$HOME/.config}/reply/prompt.pl>:
     $insert_time    = ' %s';
     $time_format    = '%H:%M:%S';  # time format
     $prompt_char    = '❯ ';        # prompt character
+    $wakatime_cmd =
+    'wakatime-cli --write --plugin=repl-reply-wakatime --entity-type=app --entity=perl --alternate-language=perl --project=%s';

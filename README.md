@@ -39,6 +39,8 @@ Your perl deserves a beautiful REPL.
 
 ![screenshot](https://user-images.githubusercontent.com/32936898/221406537-5c9222e2-23ed-423c-9860-671b06421aef.jpg)
 
+[![wakatime](https://user-images.githubusercontent.com/32936898/226532448-84086ab6-241a-45f0-b8c1-6db8a7bb3fcf.jpg)](https://wakatime.com)
+
 ## Install
 
 ### [CPAN](https://metacpan.org/pod/Reply::Plugin::Prompt)
