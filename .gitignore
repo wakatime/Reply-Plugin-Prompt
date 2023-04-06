@@ -1,6 +1,5 @@
 /.vscode/perl-lang/
-/MANIFEST
-/MANIFEST.SKIP
+/Reply-Plugin-Prompt-*/
 
 # create by https://github.com/iamcco/coc-gitignore (Sun Feb 26 2023 13:28:06 GMT+0800 (China Standard Time))
 # Perl.gitignore:

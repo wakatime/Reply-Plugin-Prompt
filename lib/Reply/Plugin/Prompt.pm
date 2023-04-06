@@ -1,8 +1,7 @@
 package Reply::Plugin::Prompt;
 use strict;
 use warnings;
-use experimental qw(try);
-use Cwd          qw(abs_path getcwd);
+use Cwd qw(abs_path getcwd);
 use File::Basename;
 use Env   qw(HOME);
 use POSIX qw(strftime);
@@ -133,14 +132,14 @@ sub section_time {
     return strftime( shift, localtime );
 }
 
-try {
+# https://stackoverflow.com/questions/10342875/how-to-properly-use-the-try-catch-in-perl-that-error-pm-provides/10343025
+eval {
     require File::XDG;
     my $xdg    = File::XDG->new( name => 'reply', api => 1 );
     my $config = $xdg->config_home->child('prompt.pl')->slurp_utf8;
     eval $config;
-}
-catch ($err) {
-}
+    1;
+} or 1;
 
 # these information will not change so source them once.
 my $os      = section_os;

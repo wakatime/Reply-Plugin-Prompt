@@ -25,20 +25,14 @@ jobs:
       - uses: actions/checkout@v3
       - uses: shogo82148/actions-setup-perl@v1
       - name: Install Dependencies
-        run: |
-          cpanm -qn File::XDG
-      - name: Install
-        run: |
-          ./Makefile.PL
-          make manifest
-          make install
-      - name: Install Requirements
-        run: |
-          cpanm -qn Devel::Cover Devel::Cover::Report::Codecovbash
+        run: >
+          cpanm -qn Dist::Zilla::App::Command::cover
+          Devel::Cover::Report::Codecovbash Reply
       - name: Test
         run: |
-          make test
-          cover -test -report codecovbash
+          git config github.user $GITHUB_REPOSITORY_OWNER
+          dzil authordeps --missing | cpanm -qn
+          dzil cover -test -report codecovbash
       - uses: codecov/codecov-action@v3
 
   deploy:
@@ -47,32 +41,26 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: shogo82148/actions-setup-perl@v1
+      - name: Install Dependencies
+        run: |
+          cpanm -qn Dist::Zilla CPAN::Uploader
       - name: Build
         run: |
-          ./Makefile.PL
-          make manifest
-          make dist
+          git config github.user $GITHUB_REPOSITORY_OWNER
+          dzil authordeps --missing | cpanm -qn
+          dzil build
+          perl -0777 -ni -e'/## .*?\n\n(.*?)\n\n\n/s; print $1' CHANGELOG.md
       - uses: actions/upload-artifact@v3
         if: ${{ ! startsWith(github.ref, 'refs/tags/') }}
         with:
           path: |
             *.tar.gz
-      - name: Get changelog
-        if: startsWith(github.ref, 'refs/tags/')
-        run: >
-          mkdir -p build;
-          perl -0777 -ne'/## .*?\n\n(.*?)\n\n\n/s; print $1' CHANGELOG.md >
-          build/CHANGELOG.md
       - uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          body_path: build/CHANGELOG.md
+          body_path: CHANGELOG.md
           files: |
             *.tar.gz
-      - name: Install Requirements
-        if: startsWith(github.ref, 'refs/tags/')
-        run: |
-          cpanm -qn CPAN::Uploader
       - name: Upload
         if: startsWith(github.ref, 'refs/tags/')
         run: >
