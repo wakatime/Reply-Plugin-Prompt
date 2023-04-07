@@ -83,5 +83,5 @@ repos:
           - lib/Reply/Plugin/Prompt.pm
       - id: update-package.json
         args:
-          - Makefile.PL
+          - dist.ini
           - package.json

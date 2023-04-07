@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="0.0.11"></a>
+## 0.0.11 (2023-04-06)
+
+### Fixed
+
+- 🐛 Use eval to replace try/catch [[22dd7a8](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/22dd7a8cd056f01c40fabb01b162801753ec5e10)]
+
+
 <a name="0.0.10"></a>
 ## 0.0.10 (2023-03-21)
 
