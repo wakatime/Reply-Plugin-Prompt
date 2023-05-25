@@ -1,0 +1,249 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.0.16\n"
+"POT-Creation-Date: 2023-05-25 22:04+0800\n"
+"PO-Revision-Date: 2023-05-25 19:12\n"
+"Last-Translator: Wu Zhenyu <wuzhenyu@ustc.edu>\n"
+"Language-Team: zh_CN <wuzhenyu@ustc.edu>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title #
+#: README.md:1
+#, no-wrap
+msgid "Reply-Plugin-Prompt"
+msgstr "Reply-Plugin-Prompt"
+
+#. type: Plain text
+#: README.md:6
+msgid ""
+"[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/Freed-Wu/"
+"Reply-Plugin-Prompt/main.svg)](https://results.pre-commit.ci/latest/github/"
+"Freed-Wu/Reply-Plugin-Prompt/main)  [![github/workflow](https://github.com/"
+"Freed-Wu/Reply-Plugin-Prompt/actions/workflows/main.yml/badge.svg)](https://"
+"github.com/Freed-Wu/Reply-Plugin-Prompt/actions)  [![codecov](https://"
+"codecov.io/gh/Freed-Wu/Reply-Plugin-Prompt/branch/main/graph/badge.svg)]"
+"(https://codecov.io/gh/Freed-Wu/Reply-Plugin-Prompt)"
+msgstr ""
+"[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/Freed-Wu/"
+"Reply-Plugin-Prompt/main.svg)](https://results.pre-commit.ci/latest/github/"
+"Freed-Wu/Reply-Plugin-Prompt/main)  [![github/workflow](https://github.com/"
+"Freed-Wu/Reply-Plugin-Prompt/actions/workflows/main.yml/badge.svg)](https://"
+"github.com/Freed-Wu/Reply-Plugin-Prompt/actions)  [![codecov](https://"
+"codecov.io/gh/Freed-Wu/Reply-Plugin-Prompt/branch/main/graph/badge.svg)]"
+"(https://codecov.io/gh/Freed-Wu/Reply-Plugin-Prompt)"
+
+#. type: Plain text
+#: README.md:22
+msgid ""
+"[![github/downloads](https://shields.io/github/downloads/Freed-Wu/Reply-"
+"Plugin-Prompt/total)](https://github.com/Freed-Wu/Reply-Plugin-Prompt/"
+"releases)  [![github/downloads/latest](https://shields.io/github/downloads/"
+"Freed-Wu/Reply-Plugin-Prompt/latest/total)](https://github.com/Freed-Wu/"
+"Reply-Plugin-Prompt/releases/latest)  [![github/issues](https://shields.io/"
+"github/issues/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/"
+"Reply-Plugin-Prompt/issues)  [![github/issues-closed](https://shields.io/"
+"github/issues-closed/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-"
+"Wu/Reply-Plugin-Prompt/issues?q=is%3Aissue+is%3Aclosed)  [![github/issues-pr]"
+"(https://shields.io/github/issues-pr/Freed-Wu/Reply-Plugin-Prompt)](https://"
+"github.com/Freed-Wu/Reply-Plugin-Prompt/pulls)  [![github/issues-pr-closed]"
+"(https://shields.io/github/issues-pr-closed/Freed-Wu/Reply-Plugin-Prompt)]"
+"(https://github.com/Freed-Wu/Reply-Plugin-Prompt/pulls?"
+"q=is%3Apr+is%3Aclosed)  [![github/discussions](https://shields.io/github/"
+"discussions/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-"
+"Plugin-Prompt/discussions)  [![github/milestones](https://shields.io/github/"
+"milestones/all/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/"
+"Reply-Plugin-Prompt/milestones)  [![github/forks](https://shields.io/github/"
+"forks/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-"
+"Plugin-Prompt/network/members)  [![github/stars](https://shields.io/github/"
+"stars/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-"
+"Plugin-Prompt/stargazers)  [![github/watchers](https://shields.io/github/"
+"watchers/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-"
+"Plugin-Prompt/watchers)  [![github/contributors](https://shields.io/github/"
+"contributors/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/"
+"Reply-Plugin-Prompt/graphs/contributors)  [![github/commit-activity](https://"
+"shields.io/github/commit-activity/w/Freed-Wu/Reply-Plugin-Prompt)](https://"
+"github.com/Freed-Wu/Reply-Plugin-Prompt/graphs/commit-activity)  [![github/"
+"last-commit](https://shields.io/github/last-commit/Freed-Wu/Reply-Plugin-"
+"Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commits)  [![github/"
+"release-date](https://shields.io/github/release-date/Freed-Wu/Reply-Plugin-"
+"Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt/releases/latest)"
+msgstr ""
+"[![github/downloads](https://shields.io/github/downloads/Freed-Wu/Reply-"
+"Plugin-Prompt/total)](https://github.com/Freed-Wu/Reply-Plugin-Prompt/"
+"releases)  [![github/downloads/latest](https://shields.io/github/downloads/"
+"Freed-Wu/Reply-Plugin-Prompt/latest/total)](https://github.com/Freed-Wu/"
+"Reply-Plugin-Prompt/releases/latest)  [![github/issues](https://shields.io/"
+"github/issues/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/"
+"Reply-Plugin-Prompt/issues)  [![github/issues-closed](https://shields.io/"
+"github/issues-closed/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-"
+"Wu/Reply-Plugin-Prompt/issues?q=is%3Aissue+is%3Aclosed)  [![github/issues-pr]"
+"(https://shields.io/github/issues-pr/Freed-Wu/Reply-Plugin-Prompt)](https://"
+"github.com/Freed-Wu/Reply-Plugin-Prompt/pulls)  [![github/issues-pr-closed]"
+"(https://shields.io/github/issues-pr-closed/Freed-Wu/Reply-Plugin-Prompt)]"
+"(https://github.com/Freed-Wu/Reply-Plugin-Prompt/pulls?"
+"q=is%3Apr+is%3Aclosed)  [![github/discussions](https://shields.io/github/"
+"discussions/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-"
+"Plugin-Prompt/discussions)  [![github/milestones](https://shields.io/github/"
+"milestones/all/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/"
+"Reply-Plugin-Prompt/milestones)  [![github/forks](https://shields.io/github/"
+"forks/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-"
+"Plugin-Prompt/network/members)  [![github/stars](https://shields.io/github/"
+"stars/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-"
+"Plugin-Prompt/stargazers)  [![github/watchers](https://shields.io/github/"
+"watchers/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-"
+"Plugin-Prompt/watchers)  [![github/contributors](https://shields.io/github/"
+"contributors/Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/"
+"Reply-Plugin-Prompt/graphs/contributors)  [![github/commit-activity](https://"
+"shields.io/github/commit-activity/w/Freed-Wu/Reply-Plugin-Prompt)](https://"
+"github.com/Freed-Wu/Reply-Plugin-Prompt/graphs/commit-activity)  [![github/"
+"last-commit](https://shields.io/github/last-commit/Freed-Wu/Reply-Plugin-"
+"Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commits)  [![github/"
+"release-date](https://shields.io/github/release-date/Freed-Wu/Reply-Plugin-"
+"Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt/releases/latest)"
+
+#. type: Plain text
+#: README.md:30
+msgid ""
+"[![github/license](https://shields.io/github/license/Freed-Wu/Reply-Plugin-"
+"Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt/blob/main/LICENSE)  "
+"[![github/languages](https://shields.io/github/languages/count/Freed-Wu/"
+"Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt)  [!"
+"[github/languages/top](https://shields.io/github/languages/top/Freed-Wu/"
+"Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt)  [!"
+"[github/directory-file-count](https://shields.io/github/directory-file-count/"
+"Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-"
+"Prompt)  [![github/code-size](https://shields.io/github/languages/code-size/"
+"Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-"
+"Prompt)  [![github/repo-size](https://shields.io/github/repo-size/Freed-Wu/"
+"Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt)  [!"
+"[github/v](https://shields.io/github/v/release/Freed-Wu/Reply-Plugin-Prompt)]"
+"(https://github.com/Freed-Wu/Reply-Plugin-Prompt)"
+msgstr ""
+"[![github/license](https://shields.io/github/license/Freed-Wu/Reply-Plugin-"
+"Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt/blob/main/LICENSE)  "
+"[![github/languages](https://shields.io/github/languages/count/Freed-Wu/"
+"Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt)  [!"
+"[github/languages/top](https://shields.io/github/languages/top/Freed-Wu/"
+"Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt)  [!"
+"[github/directory-file-count](https://shields.io/github/directory-file-count/"
+"Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-"
+"Prompt)  [![github/code-size](https://shields.io/github/languages/code-size/"
+"Freed-Wu/Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-"
+"Prompt)  [![github/repo-size](https://shields.io/github/repo-size/Freed-Wu/"
+"Reply-Plugin-Prompt)](https://github.com/Freed-Wu/Reply-Plugin-Prompt)  [!"
+"[github/v](https://shields.io/github/v/release/Freed-Wu/Reply-Plugin-Prompt)]"
+"(https://github.com/Freed-Wu/Reply-Plugin-Prompt)"
+
+#. type: Plain text
+#: README.md:32
+msgid ""
+"[![cpan/v](https://img.shields.io/cpan/v/Reply-Plugin-Prompt)](https://"
+"metacpan.org/pod/Reply::Plugin::Prompt)"
+msgstr ""
+"[![cpan/v](https://img.shields.io/cpan/v/Reply-Plugin-Prompt)](https://"
+"metacpan.org/pod/Reply::Plugin::Prompt)"
+
+#. type: Plain text
+#: README.md:34
+msgid ""
+"[中文](https://metacpan.org/release/FREED/Reply-Plugin-Prompt-0.0.17.0/"
+"source/README-zh_CN.md)"
+msgstr ""
+"[中文](https://metacpan.org/release/FREED/Reply-Plugin-Prompt-0.0.17.0/"
+"source/README-zh_CN.md)"
+
+#. type: Plain text
+#: README.md:39
+msgid ""
+"[Reply](https://metacpan.org/pod/Reply) plugin for [powerlevel10k](https://"
+"github.com/romkatv/powerlevel10k) style prompt.  It is an enhancement of "
+"[Reply::Plugin::FancyPrompt](https://metacpan.org/pod/Reply::Plugin::"
+"FancyPrompt)."
+msgstr ""
+"[powerlevel10k](https://github.com/romkatv/powerlevel10k) 风格提示的 reply 插"
+"件。它是一个 (Reply::Plugin::FancyPrompt)[https://metacpan.org/pod/Reply::"
+"Plugin::FancyPrompt] 的增强。"
+
+#. type: textblock
+#: README.md:41 lib/Reply/Plugin/Prompt.pm:234
+msgid "Your perl deserves a beautiful REPL."
+msgstr "你的 perl 值得一个更好的 REPL 。"
+
+#. type: Plain text
+#: README.md:43
+msgid ""
+"![screenshot](https://user-images.githubusercontent."
+"com/32936898/221406537-5c9222e2-23ed-423c-9860-671b06421aef.jpg)"
+msgstr ""
+"![screenshot](https://user-images.githubusercontent."
+"com/32936898/221406537-5c9222e2-23ed-423c-9860-671b06421aef.jpg)"
+
+#. type: Plain text
+#: README.md:45
+msgid ""
+"[![wakatime](https://user-images.githubusercontent."
+"com/32936898/226532448-84086ab6-241a-45f0-b8c1-6db8a7bb3fcf.jpg)](https://"
+"wakatime.com)"
+msgstr ""
+"[![wakatime](https://user-images.githubusercontent."
+"com/32936898/226532448-84086ab6-241a-45f0-b8c1-6db8a7bb3fcf.jpg)](https://"
+"wakatime.com)"
+
+#. type: Title ##
+#: README.md:46
+#, no-wrap
+msgid "Install"
+msgstr "安装"
+
+#. type: Title ###
+#: README.md:48
+#, no-wrap
+msgid "[CPAN](https://metacpan.org/pod/Reply::Plugin::Prompt)"
+msgstr "[CPAN](https://metacpan.org/pod/Reply::Plugin::Prompt)"
+
+#. type: Fenced code block (bash)
+#: README.md:50
+#, no-wrap
+msgid "cpan Reply::Plugin::Prompt\n"
+msgstr "cpan Reply::Plugin::Prompt\n"
+
+#. type: Title ###
+#: README.md:54
+#, no-wrap
+msgid "[AUR](https://aur.archlinux.org/packages/perl-reply-plugin-prompt)"
+msgstr "[AUR](https://aur.archlinux.org/packages/perl-reply-plugin-prompt)"
+
+#. type: Fenced code block (bash)
+#: README.md:56
+#, no-wrap
+msgid "yay -S perl-reply-plugin-prompt\n"
+msgstr "yay -S perl-reply-plugin-prompt\n"
+
+#. type: Title ##
+#: README.md:60
+#, no-wrap
+msgid "Configure"
+msgstr "配置"
+
+#. type: Plain text
+#: README.md:63
+msgid ""
+"[`perldoc Reply::Plugin::Prompt`](https://metacpan.org/pod/Reply::Plugin::"
+"Prompt)."
+msgstr ""
+"[`perldoc Reply::Plugin::Prompt`](https://metacpan.org/dist/Reply-Plugin-"
+"Prompt/view/lib/Reply/Plugin/translated/zh_CN/Prompt.pod)."
+
+#. type: Title ##
+#: README.md:64
+#, no-wrap
+msgid "Similar Prompts"
+msgstr "相似的命令提示"
+
+#. type: Plain text
+#: README.md:66
+msgid "See [here](https://github.com/Freed-Wu/my-dotfiles/wiki)."
+msgstr "参见[这里](https://github.com/Freed-Wu/my-dotfiles/wiki)。"

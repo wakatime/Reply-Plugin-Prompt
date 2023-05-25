@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.0.16\n"
-"POT-Creation-Date: 2023-05-25 18:38+0800\n"
+"POT-Creation-Date: 2023-05-25 21:42+0800\n"
 "PO-Revision-Date: 2023-05-25 19:12\n"
 "Last-Translator: Wu Zhenyu <wuzhenyu@ustc.edu>\n"
 "Language-Team: zh_CN <wuzhenyu@ustc.edu>\n"
@@ -9,6 +9,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#. type: textblock
+#: README.md:39 lib/Reply/Plugin/Prompt.pm:234
+msgid "Your perl deserves a beautiful REPL."
+msgstr "你的 perl 值得一个更好的 REPL 。"
 
 #. type: =head1
 #: lib/Reply/Plugin/Prompt.pm:225
@@ -32,46 +37,44 @@ msgid ""
 "powerlevel10k> style prompt. It is an enhancement of L<Reply::Plugin::"
 "FancyPrompt>."
 msgstr ""
-"L<powerlevel10k|https://github.com/romkatv/powerlevel10k> 风格提示的 reply 插件。"
-"它是一个 L<Reply::Plugin::FancyPrompt> 的增强"
+"L<powerlevel10k|https://github.com/romkatv/powerlevel10k> 风格提示的 reply 插"
+"件。它是一个 L<Reply::Plugin::FancyPrompt> 的增强"
 
 #. type: textblock
-#: lib/Reply/Plugin/Prompt.pm:234
+#: lib/Reply/Plugin/Prompt.pm:236
 msgid ""
-"Your perl deserves a beautiful REPL. See L<README.md|https://github.com/"
-"Freed-Wu/Reply-Plugin-Prompt> for screenshots."
+"See L<README.md|https://github.com/Freed-Wu/Reply-Plugin-Prompt> for "
+"screenshots."
 msgstr ""
-"你的 perl 值得一个更好的 REPL. 参见  L<README.md|https://github.com/"
-"Freed-Wu/Reply-Plugin-Prompt> 的截屏."
+"参见  L<README.md|https://github.com/Freed-Wu/Reply-Plugin-Prompt> 的截屏."
 
 #. type: textblock
-#: lib/Reply/Plugin/Prompt.pm:237
+#: lib/Reply/Plugin/Prompt.pm:238
 msgid ""
 "Now this plugin supports L<wakatime|https://wakatime.com> which will record "
 "your time to use perl in L<Reply>. If you don't want it, please remove "
 "I<wakatime> from I<@sections>."
 msgstr ""
-"现在这个插件支持 L<wakatime|https://wakatime.com> ，可以记录"
-"你在 L<Reply> 中使用 perl 的时间。如果你不想要这个，从 I<@sections> 移除"
-"I<wakatime> 。"
+"现在这个插件支持 L<wakatime|https://wakatime.com> ，可以记录你在 L<Reply> 中"
+"使用 perl 的时间。如果你不想要这个，从 I<@sections> 移除I<wakatime> 。"
 
 #. type: =head1
-#: lib/Reply/Plugin/Prompt.pm:241
+#: lib/Reply/Plugin/Prompt.pm:242
 msgid "CONFIGURE"
 msgstr "配置"
 
 #. type: =head2
-#: lib/Reply/Plugin/Prompt.pm:243
+#: lib/Reply/Plugin/Prompt.pm:244
 msgid "ENABLE"
 msgstr "使能"
 
 #. type: textblock
-#: lib/Reply/Plugin/Prompt.pm:245
+#: lib/Reply/Plugin/Prompt.pm:246
 msgid "Enable this plugin in your F<~/.replyrc>:"
 msgstr "在你的 F<~/.replyrc> 中使能这个插件："
 
 #. type: verbatim
-#: lib/Reply/Plugin/Prompt.pm:247
+#: lib/Reply/Plugin/Prompt.pm:248
 #, no-wrap
 msgid ""
 "    [Prompt]\n"
@@ -81,17 +84,17 @@ msgstr ""
 "\n"
 
 #. type: =head2
-#: lib/Reply/Plugin/Prompt.pm:249
+#: lib/Reply/Plugin/Prompt.pm:250
 msgid "CUSTOMIZE"
 msgstr "自定义"
 
 #. type: textblock
-#: lib/Reply/Plugin/Prompt.pm:251
+#: lib/Reply/Plugin/Prompt.pm:252
 msgid "Install L<nerd-font|https://github.com/ryanoasis/nerd-fonts> firstly."
 msgstr "首先安装 L<nerd-font|https://github.com/ryanoasis/nerd-fonts> 。"
 
 #. type: textblock
-#: lib/Reply/Plugin/Prompt.pm:253
+#: lib/Reply/Plugin/Prompt.pm:254
 msgid ""
 "Install L<File::XDG> > 1.00, then edit F<${XDG_CONFIG_PATH:-$HOME/.config}/"
 "reply/prompt.pl>:"
@@ -100,7 +103,7 @@ msgstr ""
 "reply/prompt.pl>:"
 
 #. type: verbatim
-#: lib/Reply/Plugin/Prompt.pm:258
+#: lib/Reply/Plugin/Prompt.pm:259
 #, no-wrap
 msgid ""
 "    @sections =\n"

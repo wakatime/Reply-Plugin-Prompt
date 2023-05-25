@@ -231,8 +231,9 @@ Reply::Plugin::Prompt - reply plugin for powerlevel10k style prompt
 L<Reply> plugin for L<powerlevel10k|https://github.com/romkatv/powerlevel10k>
 style prompt. It is an enhancement of L<Reply::Plugin::FancyPrompt>.
 
-Your perl deserves a beautiful REPL. See
-L<README.md|https://github.com/Freed-Wu/Reply-Plugin-Prompt> for screenshots.
+Your perl deserves a beautiful REPL.
+
+See L<README.md|https://github.com/Freed-Wu/Reply-Plugin-Prompt> for screenshots.
 
 Now this plugin supports L<wakatime|https://wakatime.com> which will record your
 time to use perl in L<Reply>. If you don't want it, please remove I<wakatime>

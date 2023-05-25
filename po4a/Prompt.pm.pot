@@ -7,14 +7,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-05-25 18:38+0800\n"
+"POT-Creation-Date: 2023-05-25 21:54+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#. type: textblock
+#: README.md:41 lib/Reply/Plugin/Prompt.pm:234
+msgid "Your perl deserves a beautiful REPL."
+msgstr ""
 
 #. type: =head1
 #: lib/Reply/Plugin/Prompt.pm:225
@@ -34,21 +39,20 @@ msgstr ""
 #. type: textblock
 #: lib/Reply/Plugin/Prompt.pm:231
 msgid ""
-"L<Reply> plugin for "
-"L<powerlevel10k|https://github.com/romkatv/powerlevel10k> style prompt. It "
-"is an enhancement of L<Reply::Plugin::FancyPrompt>."
+"L<Reply> plugin for L<powerlevel10k|https://github.com/romkatv/"
+"powerlevel10k> style prompt. It is an enhancement of L<Reply::Plugin::"
+"FancyPrompt>."
 msgstr ""
 
 #. type: textblock
-#: lib/Reply/Plugin/Prompt.pm:234
+#: lib/Reply/Plugin/Prompt.pm:236
 msgid ""
-"Your perl deserves a beautiful REPL. See "
-"L<README.md|https://github.com/Freed-Wu/Reply-Plugin-Prompt> for "
+"See L<README.md|https://github.com/Freed-Wu/Reply-Plugin-Prompt> for "
 "screenshots."
 msgstr ""
 
 #. type: textblock
-#: lib/Reply/Plugin/Prompt.pm:237
+#: lib/Reply/Plugin/Prompt.pm:238
 msgid ""
 "Now this plugin supports L<wakatime|https://wakatime.com> which will record "
 "your time to use perl in L<Reply>. If you don't want it, please remove "
@@ -56,22 +60,22 @@ msgid ""
 msgstr ""
 
 #. type: =head1
-#: lib/Reply/Plugin/Prompt.pm:241
+#: lib/Reply/Plugin/Prompt.pm:242
 msgid "CONFIGURE"
 msgstr ""
 
 #. type: =head2
-#: lib/Reply/Plugin/Prompt.pm:243
+#: lib/Reply/Plugin/Prompt.pm:244
 msgid "ENABLE"
 msgstr ""
 
 #. type: textblock
-#: lib/Reply/Plugin/Prompt.pm:245
+#: lib/Reply/Plugin/Prompt.pm:246
 msgid "Enable this plugin in your F<~/.replyrc>:"
 msgstr ""
 
 #. type: verbatim
-#: lib/Reply/Plugin/Prompt.pm:247
+#: lib/Reply/Plugin/Prompt.pm:248
 #, no-wrap
 msgid ""
 "    [Prompt]\n"
@@ -79,29 +83,28 @@ msgid ""
 msgstr ""
 
 #. type: =head2
-#: lib/Reply/Plugin/Prompt.pm:249
+#: lib/Reply/Plugin/Prompt.pm:250
 msgid "CUSTOMIZE"
 msgstr ""
 
 #. type: textblock
-#: lib/Reply/Plugin/Prompt.pm:251
+#: lib/Reply/Plugin/Prompt.pm:252
 msgid "Install L<nerd-font|https://github.com/ryanoasis/nerd-fonts> firstly."
 msgstr ""
 
 #. type: textblock
-#: lib/Reply/Plugin/Prompt.pm:253
+#: lib/Reply/Plugin/Prompt.pm:254
 msgid ""
-"Install L<File::XDG> > 1.00, then edit "
-"F<${XDG_CONFIG_PATH:-$HOME/.config}/reply/prompt.pl>:"
+"Install L<File::XDG> > 1.00, then edit F<${XDG_CONFIG_PATH:-$HOME/.config}/"
+"reply/prompt.pl>:"
 msgstr ""
 
 #. type: verbatim
-#: lib/Reply/Plugin/Prompt.pm:258
+#: lib/Reply/Plugin/Prompt.pm:259
 #, no-wrap
 msgid ""
 "    @sections =\n"
-"      ( 'wakatime', 'result', 'os', 'version', 'path', 'time' );    # "
-"section order\n"
+"      ( 'wakatime', 'result', 'os', 'version', 'path', 'time' );    # section order\n"
 "    %section_colors = (\n"
 "        'wakatime' => '',\n"
 "        'result'   => 'yellow on_red',\n"
@@ -111,8 +114,7 @@ msgid ""
 "        'time'     => 'black on_white',\n"
 "    );\n"
 "    $sep            = '';         # section separator\n"
-"    $insert_text    = ' %s ';      # whitespaces which padded around section "
-"text\n"
+"    $insert_text    = ' %s ';      # whitespaces which padded around section text\n"
 "    $insert_result  = '✘ %s';\n"
 "    $insert_version = ' %s';\n"
 "    $insert_os      = '%s';\n"
@@ -120,6 +122,5 @@ msgid ""
 "    $time_format    = '%H:%M:%S';  # time format\n"
 "    $prompt_char    = '❯ ';        # prompt character\n"
 "    $wakatime_cmd =\n"
-"    'wakatime-cli --write --plugin=repl-reply-wakatime --entity-type=app "
-"--entity=perl --alternate-language=perl --project=%s';\n"
+"    'wakatime-cli --write --plugin=repl-reply-wakatime --entity-type=app --entity=perl --alternate-language=perl --project=%s';\n"
 msgstr ""
