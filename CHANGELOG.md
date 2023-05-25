@@ -1,5 +1,21 @@
 # Changelog
 
+<a name="next"></a>
+## next
+
+### Fixed
+
+- 💚 Move AUR CD to the last to avoid incomplete downloading [[0181f8f](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/0181f8f3559e5a90bd893cbfbf68a2528e3a5db5)]
+
+
+<a name="0.0.16"></a>
+## 0.0.16 (2023-04-11)
+
+### Added
+
+- 👷‍♂️ Add update-aur-package [[4839847](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/48398479a28d1bf1e9440fb2a25aaf950c2d1f33)]
+
+
 <a name="0.0.11"></a>
 ## 0.0.11 (2023-04-06)
 

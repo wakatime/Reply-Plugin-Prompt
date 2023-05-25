@@ -44,8 +44,11 @@ jobs:
       - name: Install Dependencies
         run: |
           cpanm -qn Dist::Zilla CPAN::Uploader
+          sudo apt update
+          sudo apt install po4a
       - name: Build
         run: |
+          po4a po4a/po4a.cfg
           git config github.user $GITHUB_REPOSITORY_OWNER
           dzil authordeps --missing | cpanm -qn
           dzil build

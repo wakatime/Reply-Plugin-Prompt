@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-05-25 18:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: =head1
+#: lib/Reply/Plugin/Prompt.pm:225
+msgid "NAME"
+msgstr ""
+
+#. type: textblock
+#: lib/Reply/Plugin/Prompt.pm:227
+msgid "Reply::Plugin::Prompt - reply plugin for powerlevel10k style prompt"
+msgstr ""
+
+#. type: =head1
+#: lib/Reply/Plugin/Prompt.pm:229
+msgid "DESCRIPTION"
+msgstr ""
+
+#. type: textblock
+#: lib/Reply/Plugin/Prompt.pm:231
+msgid ""
+"L<Reply> plugin for "
+"L<powerlevel10k|https://github.com/romkatv/powerlevel10k> style prompt. It "
+"is an enhancement of L<Reply::Plugin::FancyPrompt>."
+msgstr ""
+
+#. type: textblock
+#: lib/Reply/Plugin/Prompt.pm:234
+msgid ""
+"Your perl deserves a beautiful REPL. See "
+"L<README.md|https://github.com/Freed-Wu/Reply-Plugin-Prompt> for "
+"screenshots."
+msgstr ""
+
+#. type: textblock
+#: lib/Reply/Plugin/Prompt.pm:237
+msgid ""
+"Now this plugin supports L<wakatime|https://wakatime.com> which will record "
+"your time to use perl in L<Reply>. If you don't want it, please remove "
+"I<wakatime> from I<@sections>."
+msgstr ""
+
+#. type: =head1
+#: lib/Reply/Plugin/Prompt.pm:241
+msgid "CONFIGURE"
+msgstr ""
+
+#. type: =head2
+#: lib/Reply/Plugin/Prompt.pm:243
+msgid "ENABLE"
+msgstr ""
+
+#. type: textblock
+#: lib/Reply/Plugin/Prompt.pm:245
+msgid "Enable this plugin in your F<~/.replyrc>:"
+msgstr ""
+
+#. type: verbatim
+#: lib/Reply/Plugin/Prompt.pm:247
+#, no-wrap
+msgid ""
+"    [Prompt]\n"
+"\n"
+msgstr ""
+
+#. type: =head2
+#: lib/Reply/Plugin/Prompt.pm:249
+msgid "CUSTOMIZE"
+msgstr ""
+
+#. type: textblock
+#: lib/Reply/Plugin/Prompt.pm:251
+msgid "Install L<nerd-font|https://github.com/ryanoasis/nerd-fonts> firstly."
+msgstr ""
+
+#. type: textblock
+#: lib/Reply/Plugin/Prompt.pm:253
+msgid ""
+"Install L<File::XDG> > 1.00, then edit "
+"F<${XDG_CONFIG_PATH:-$HOME/.config}/reply/prompt.pl>:"
+msgstr ""
+
+#. type: verbatim
+#: lib/Reply/Plugin/Prompt.pm:258
+#, no-wrap
+msgid ""
+"    @sections =\n"
+"      ( 'wakatime', 'result', 'os', 'version', 'path', 'time' );    # "
+"section order\n"
+"    %section_colors = (\n"
+"        'wakatime' => '',\n"
+"        'result'   => 'yellow on_red',\n"
+"        'os'       => 'black on_yellow',\n"
+"        'version'  => 'blue on_black',\n"
+"        'path'     => 'white on_blue',\n"
+"        'time'     => 'black on_white',\n"
+"    );\n"
+"    $sep            = '';         # section separator\n"
+"    $insert_text    = ' %s ';      # whitespaces which padded around section "
+"text\n"
+"    $insert_result  = '✘ %s';\n"
+"    $insert_version = ' %s';\n"
+"    $insert_os      = '%s';\n"
+"    $insert_time    = ' %s';\n"
+"    $time_format    = '%H:%M:%S';  # time format\n"
+"    $prompt_char    = '❯ ';        # prompt character\n"
+"    $wakatime_cmd =\n"
+"    'wakatime-cli --write --plugin=repl-reply-wakatime --entity-type=app "
+"--entity=perl --alternate-language=perl --project=%s';\n"
+msgstr ""
