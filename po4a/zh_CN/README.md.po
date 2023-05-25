@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.0.16\n"
-"POT-Creation-Date: 2023-05-25 22:04+0800\n"
+"POT-Creation-Date: 2023-05-25 22:35+0800\n"
 "PO-Revision-Date: 2023-05-25 19:12\n"
 "Last-Translator: Wu Zhenyu <wuzhenyu@ustc.edu>\n"
 "Language-Team: zh_CN <wuzhenyu@ustc.edu>\n"
@@ -149,10 +149,10 @@ msgstr ""
 #. type: Plain text
 #: README.md:34
 msgid ""
-"[中文](https://metacpan.org/release/FREED/Reply-Plugin-Prompt-0.0.17.0/"
+"[中文](https://metacpan.org/release/FREED/Reply-Plugin-Prompt-0.0.18.0/"
 "source/README-zh_CN.md)"
 msgstr ""
-"[中文](https://metacpan.org/release/FREED/Reply-Plugin-Prompt-0.0.17.0/"
+"[中文](https://metacpan.org/release/FREED/Reply-Plugin-Prompt-0.0.18.0/"
 "source/README-zh_CN.md)"
 
 #. type: Plain text

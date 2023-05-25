@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="0.0.18"></a>
+## 0.0.18 (2023-05-25)
+
+### Miscellaneous
+
+- 📝 Translate to zh_CN [[1bffc56](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/1bffc5669aa7e0f5966a542ffeca356da0a0f35c)]
+
+
 <a name="0.0.17"></a>
 ## 0.0.17 (2023-05-25)
 

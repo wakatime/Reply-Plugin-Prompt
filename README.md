@@ -30,7 +30,7 @@
 
 [![cpan/v](https://img.shields.io/cpan/v/Reply-Plugin-Prompt)](https://metacpan.org/pod/Reply::Plugin::Prompt)
 
-[中文](https://metacpan.org/release/FREED/Reply-Plugin-Prompt-0.0.17.0/source/README-zh_CN.md)
+[中文](https://metacpan.org/release/FREED/Reply-Plugin-Prompt-0.0.18.0/source/README-zh_CN.md)
 
 [Reply](https://metacpan.org/pod/Reply) plugin for
 [powerlevel10k](https://github.com/romkatv/powerlevel10k) style prompt.
