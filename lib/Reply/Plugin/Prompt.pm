@@ -193,11 +193,18 @@ sub prompt {
             die "$section is not supported!";
         }
         my $color = $section_colors{$section};
-        if ( $last_bg ne '' ) {
-            my ($bg) = $color =~ /(?<=on_)(\S+)/g;
-            $ps1 .= color("$last_bg on_$bg") . $sep;
+        if ( $last_bg eq '' ) {
+            $ps1 .= color($color) . sprintf( $insert_text, $text );
         }
-        $ps1 .= color($color) . sprintf( $insert_text, $text );
+        else {
+            my ($bg) = $color =~ /(?<=on_)(\S+)/g;
+            my ($fg) = $color =~ /(?<!on_)(\S+)/g;
+            $ps1 .=
+                color("$last_bg on_$bg")
+              . $sep
+              . color($fg)
+              . sprintf( $insert_text, $text );
+        }
         ($last_bg) = $color =~ /(?<=on_)(\S+)/g;
     }
     return

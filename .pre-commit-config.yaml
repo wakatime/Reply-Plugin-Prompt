@@ -23,7 +23,7 @@ repos:
       - id: check-toml
       - id: check-json
   - repo: https://github.com/Lucas-C/pre-commit-hooks
-    rev: v1.5.1
+    rev: v1.5.4
     hooks:
       - id: remove-crlf
   - repo: https://github.com/codespell-project/codespell
@@ -70,7 +70,7 @@ repos:
         additional_dependencies:
           - markdown-it-texmath@0.9.1
   - repo: https://github.com/perltidy/perltidy
-    rev: "20230309.04"
+    rev: "20230701.02"
     hooks:
       - id: perltidy
   - repo: https://github.com/Freed-Wu/pre-commit-hooks
