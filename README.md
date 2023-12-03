@@ -32,14 +32,25 @@
 
 [中文](https://metacpan.org/release/FREED/Reply-Plugin-Prompt-0.0.18.0/source/README-zh_CN.md)
 
-[Reply](https://metacpan.org/pod/Reply) plugin for
-[powerlevel10k](https://github.com/romkatv/powerlevel10k) style prompt.
-It is an enhancement of
-[Reply::Plugin::FancyPrompt](https://metacpan.org/pod/Reply::Plugin::FancyPrompt).
+Your perl deserves a better REPL!
 
-Your perl deserves a beautiful REPL.
+According to [interactive shells about perl](https://archive.shadowcat.co.uk/blog/matt-s-trout/mstpan-17/),
+[reply](https://metacpan.org/pod/Reply) may be the best REPL of perl up to now.
+This project provides a reply plugin to support:
+
+- A [powerlevel10k](https://github.com/romkatv/powerlevel10k) style prompt. It
+  is an enhancement of [Reply::Plugin::FancyPrompt](https://metacpan.org/pod/Reply::Plugin::FancyPrompt).
+  You can customize these sections' order:
+
+```perl
+@sections =
+  ( 'wakatime', 'result', 'os', 'version', 'path', 'time' );
+```
 
 ![screenshot](https://user-images.githubusercontent.com/32936898/221406537-5c9222e2-23ed-423c-9860-671b06421aef.jpg)
+
+- A wakatime plugin to statistic how much time you write perl in REPL. Just add `'wakatime'`
+  to your `@sections` to enable it.
 
 [![wakatime](https://user-images.githubusercontent.com/32936898/226532448-84086ab6-241a-45f0-b8c1-6db8a7bb3fcf.jpg)](https://wakatime.com)
 
@@ -54,13 +65,9 @@ cpan Reply::Plugin::Prompt
 ### [AUR](https://aur.archlinux.org/packages/perl-reply-plugin-prompt)
 
 ```bash
-yay -S perl-reply-plugin-prompt
+paru -S perl-reply-plugin-prompt
 ```
 
 ## Configure
 
 [`perldoc Reply::Plugin::Prompt`](https://metacpan.org/pod/Reply::Plugin::Prompt).
-
-## Similar Prompts
-
-See [here](https://github.com/Freed-Wu/my-dotfiles/wiki).
