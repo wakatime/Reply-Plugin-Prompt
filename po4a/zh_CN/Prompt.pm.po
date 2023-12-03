@@ -43,10 +43,10 @@ msgstr ""
 #. type: textblock
 #: lib/Reply/Plugin/Prompt.pm:236
 msgid ""
-"See L<README.md|https://github.com/Freed-Wu/Reply-Plugin-Prompt> for "
+"See L<README.md|https://github.com/wakatime/Reply-Plugin-Prompt> for "
 "screenshots."
 msgstr ""
-"参见  L<README.md|https://github.com/Freed-Wu/Reply-Plugin-Prompt> 的截屏."
+"参见  L<README.md|https://github.com/wakatime/Reply-Plugin-Prompt> 的截屏."
 
 #. type: textblock
 #: lib/Reply/Plugin/Prompt.pm:238

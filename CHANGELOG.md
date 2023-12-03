@@ -5,21 +5,21 @@
 
 ### Added
 
-- ✅ Fix tests [[6bb5361](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/6bb53617b55aac4ed16daa4440e41978bebb518e)]
-- 👷‍♂️ Add deploy-nur CD [[a3462b5](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/a3462b5ed96a98395821b0a9d887f398434d1965)]
+- ✅ Fix tests [[6bb5361](https://github.com/wakatime/Reply-Plugin-Prompt/commit/6bb53617b55aac4ed16daa4440e41978bebb518e)]
+- 👷‍♂️ Add deploy-nur CD [[a3462b5](https://github.com/wakatime/Reply-Plugin-Prompt/commit/a3462b5ed96a98395821b0a9d887f398434d1965)]
 
 ### Changed
 
-- ⚡ Short output length [[8894a0f](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/8894a0f71ea7584f1daf0ca8562eaa8ddbcbe22a)]
+- ⚡ Short output length [[8894a0f](https://github.com/wakatime/Reply-Plugin-Prompt/commit/8894a0f71ea7584f1daf0ca8562eaa8ddbcbe22a)]
 
 ### Fixed
 
-- 💚 Fix AUR CI/CD [[9fde50c](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/9fde50c6aa48a7546614bd8a5f45670c69f663cf)]
-- ✏️ Fix the typo of version [[b2bb659](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/b2bb6598f71314e766ae3f16eb467f3b044bde31)]
+- 💚 Fix AUR CI/CD [[9fde50c](https://github.com/wakatime/Reply-Plugin-Prompt/commit/9fde50c6aa48a7546614bd8a5f45670c69f663cf)]
+- ✏️ Fix the typo of version [[b2bb659](https://github.com/wakatime/Reply-Plugin-Prompt/commit/b2bb6598f71314e766ae3f16eb467f3b044bde31)]
 
 ### Miscellaneous
 
-- 📝 Update README.md [[e3cc248](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/e3cc2481056bf7065bb36fb6b6162ccd629448c8)]
+- 📝 Update README.md [[e3cc248](https://github.com/wakatime/Reply-Plugin-Prompt/commit/e3cc2481056bf7065bb36fb6b6162ccd629448c8)]
 
 
 <a name="0.0.18"></a>
@@ -27,7 +27,7 @@
 
 ### Miscellaneous
 
-- 📝 Translate to zh_CN [[1bffc56](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/1bffc5669aa7e0f5966a542ffeca356da0a0f35c)]
+- 📝 Translate to zh_CN [[1bffc56](https://github.com/wakatime/Reply-Plugin-Prompt/commit/1bffc5669aa7e0f5966a542ffeca356da0a0f35c)]
 
 
 <a name="0.0.17"></a>
@@ -35,11 +35,11 @@
 
 ### Fixed
 
-- 💚 Move AUR CD to the last to avoid incomplete downloading [[0181f8f](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/0181f8f3559e5a90bd893cbfbf68a2528e3a5db5)]
+- 💚 Move AUR CD to the last to avoid incomplete downloading [[0181f8f](https://github.com/wakatime/Reply-Plugin-Prompt/commit/0181f8f3559e5a90bd893cbfbf68a2528e3a5db5)]
 
 ### Miscellaneous
 
-- 📝 Support po4a [[dda7101](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/dda7101f3870c2d185b6f49dc4aa940c00454bcf)]
+- 📝 Support po4a [[dda7101](https://github.com/wakatime/Reply-Plugin-Prompt/commit/dda7101f3870c2d185b6f49dc4aa940c00454bcf)]
 
 
 <a name="0.0.16"></a>
@@ -47,7 +47,7 @@
 
 ### Added
 
-- 👷‍♂️ Add update-aur-package [[4839847](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/48398479a28d1bf1e9440fb2a25aaf950c2d1f33)]
+- 👷‍♂️ Add update-aur-package [[4839847](https://github.com/wakatime/Reply-Plugin-Prompt/commit/48398479a28d1bf1e9440fb2a25aaf950c2d1f33)]
 
 
 <a name="0.0.11"></a>
@@ -55,7 +55,7 @@
 
 ### Fixed
 
-- 🐛 Use eval to replace try/catch [[22dd7a8](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/22dd7a8cd056f01c40fabb01b162801753ec5e10)]
+- 🐛 Use eval to replace try/catch [[22dd7a8](https://github.com/wakatime/Reply-Plugin-Prompt/commit/22dd7a8cd056f01c40fabb01b162801753ec5e10)]
 
 
 <a name="0.0.10"></a>
@@ -63,20 +63,20 @@
 
 ### Added
 
-- ✨ Support wakatime [[131b3db](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/131b3dbd045d052a6bfe5814c8abe53e2bfb4c9c)]
-- 👷‍♂️ Add perltidy [[317ab7f](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/317ab7fe02a4dc7b69299b641e8cd91e095508b6)]
+- ✨ Support wakatime [[131b3db](https://github.com/wakatime/Reply-Plugin-Prompt/commit/131b3dbd045d052a6bfe5814c8abe53e2bfb4c9c)]
+- 👷‍♂️ Add perltidy [[317ab7f](https://github.com/wakatime/Reply-Plugin-Prompt/commit/317ab7fe02a4dc7b69299b641e8cd91e095508b6)]
 
 ### Changed
 
-- 🎨 Remove warning about uninitialized variable [[6ef485f](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/6ef485f3ff3ff10f2fd1348806aa726f6114edb8)]
+- 🎨 Remove warning about uninitialized variable [[6ef485f](https://github.com/wakatime/Reply-Plugin-Prompt/commit/6ef485f3ff3ff10f2fd1348806aa726f6114edb8)]
 
 ### Fixed
 
-- 💚 Fix pre-commit.ci [[8e43f2f](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/8e43f2fff90a806a51c28f94859e2e489d7f0f11)]
+- 💚 Fix pre-commit.ci [[8e43f2f](https://github.com/wakatime/Reply-Plugin-Prompt/commit/8e43f2fff90a806a51c28f94859e2e489d7f0f11)]
 
 ### Miscellaneous
 
-- 📝 Add man to README.md [[a7a2fe3](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/a7a2fe3509f4a7b595a82e1f3a9f2b4eb0ff867f)]
+- 📝 Add man to README.md [[a7a2fe3](https://github.com/wakatime/Reply-Plugin-Prompt/commit/a7a2fe3509f4a7b595a82e1f3a9f2b4eb0ff867f)]
 
 
 <a name="0.0.9"></a>
@@ -84,23 +84,23 @@
 
 ### Added
 
-- 👷‍♂️ Change cpan to cpanm [[e34fdc0](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/e34fdc00b6b4a98ae87719e8fc4d91d67bbb40d7)]
-- 👷‍♂️ Add CI for test coverage [[64c3244](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/64c3244c8389b303bd618f2bfcba4a241f5862bb)]
-- ✅ Add test [[7c6c4f3](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/7c6c4f32b8ae61a7514d547923a360ffb8cd60b1)]
+- 👷‍♂️ Change cpan to cpanm [[e34fdc0](https://github.com/wakatime/Reply-Plugin-Prompt/commit/e34fdc00b6b4a98ae87719e8fc4d91d67bbb40d7)]
+- 👷‍♂️ Add CI for test coverage [[64c3244](https://github.com/wakatime/Reply-Plugin-Prompt/commit/64c3244c8389b303bd618f2bfcba4a241f5862bb)]
+- ✅ Add test [[7c6c4f3](https://github.com/wakatime/Reply-Plugin-Prompt/commit/7c6c4f32b8ae61a7514d547923a360ffb8cd60b1)]
 
 ### Changed
 
-- 👽 Remove File::XDG from PREREQ_PM [[6ad0f5c](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/6ad0f5c74ceb231186b1170848d9cb52a369f2e6)]
-- 👽 Fix version of File::XDG [[2a842d0](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/2a842d08b9bc30ee5f1358a066009217229987db)]
+- 👽 Remove File::XDG from PREREQ_PM [[6ad0f5c](https://github.com/wakatime/Reply-Plugin-Prompt/commit/6ad0f5c74ceb231186b1170848d9cb52a369f2e6)]
+- 👽 Fix version of File::XDG [[2a842d0](https://github.com/wakatime/Reply-Plugin-Prompt/commit/2a842d08b9bc30ee5f1358a066009217229987db)]
 
 ### Fixed
 
-- 💚 Fix typo of github workflow [[ba25741](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/ba2574109b91ecffc54097ce9894b9a993976ea5)]
+- 💚 Fix typo of github workflow [[ba25741](https://github.com/wakatime/Reply-Plugin-Prompt/commit/ba2574109b91ecffc54097ce9894b9a993976ea5)]
 
 ### Miscellaneous
 
-- 📝 Add pod [[dc4de10](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/dc4de10bc3a3f452fba38f3fcef919a1d9b26d56)]
-- 📝 Add AUR to README.md [[380ee15](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/380ee157fe9acf61b471b476cc49e03fece0be47)]
+- 📝 Add pod [[dc4de10](https://github.com/wakatime/Reply-Plugin-Prompt/commit/dc4de10bc3a3f452fba38f3fcef919a1d9b26d56)]
+- 📝 Add AUR to README.md [[380ee15](https://github.com/wakatime/Reply-Plugin-Prompt/commit/380ee157fe9acf61b471b476cc49e03fece0be47)]
 
 
 <a name="0.0.8"></a>
@@ -108,7 +108,7 @@
 
 ### Fixed
 
-- 🐛 Fix github release [[fc9ecd5](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/fc9ecd5b0d31d71aae42ec36889478b96182771e)]
+- 🐛 Fix github release [[fc9ecd5](https://github.com/wakatime/Reply-Plugin-Prompt/commit/fc9ecd5b0d31d71aae42ec36889478b96182771e)]
 
 
 <a name="0.0.7"></a>
@@ -116,7 +116,7 @@
 
 ### Fixed
 
-- 💚 Fix github action&#x27;s fetch-depth [[13e84a8](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/13e84a85c0a5128916a9270d262fdc54e4992909)]
+- 💚 Fix github action&#x27;s fetch-depth [[13e84a8](https://github.com/wakatime/Reply-Plugin-Prompt/commit/13e84a85c0a5128916a9270d262fdc54e4992909)]
 
 
 <a name="0.0.6"></a>
@@ -124,7 +124,7 @@
 
 ### Miscellaneous
 
-- 📝 Add changelog [[670cfe2](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/670cfe2d3e0499ef7df23ee33e2c8f0649028203)]
+- 📝 Add changelog [[670cfe2](https://github.com/wakatime/Reply-Plugin-Prompt/commit/670cfe2d3e0499ef7df23ee33e2c8f0649028203)]
 
 
 <a name="0.0.5"></a>
@@ -132,7 +132,7 @@
 
 ### Miscellaneous
 
-- 🧑‍💻 Update Makefile.PL [[98b538a](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/98b538a85b1b45f7ece1097a147b4714aef6b696)]
+- 🧑‍💻 Update Makefile.PL [[98b538a](https://github.com/wakatime/Reply-Plugin-Prompt/commit/98b538a85b1b45f7ece1097a147b4714aef6b696)]
 
 
 <a name="0.0.4"></a>
@@ -140,11 +140,11 @@
 
 ### Changed
 
-- 🎨 Format code [[350f185](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/350f1852a8b3216cc3b483f51b6d3c535c9315d3)]
+- 🎨 Format code [[350f185](https://github.com/wakatime/Reply-Plugin-Prompt/commit/350f1852a8b3216cc3b483f51b6d3c535c9315d3)]
 
 ### Miscellaneous
 
-- 🧑‍💻 Remove eval() [[3c8d998](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/3c8d9981450200cb1162339410b8b308873d62f5)]
+- 🧑‍💻 Remove eval() [[3c8d998](https://github.com/wakatime/Reply-Plugin-Prompt/commit/3c8d9981450200cb1162339410b8b308873d62f5)]
 
 
 <a name="0.0.3"></a>
@@ -152,7 +152,7 @@
 
 ### Added
 
-- ✨ Support XDG, fix [#1](https://github.com/Freed-Wu/Reply-Plugin-Prompt/issues/1) [[ed78cae](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/ed78caeec40903b7840bb305b8f9863166850282)]
+- ✨ Support XDG, fix [#1](https://github.com/wakatime/Reply-Plugin-Prompt/issues/1) [[ed78cae](https://github.com/wakatime/Reply-Plugin-Prompt/commit/ed78caeec40903b7840bb305b8f9863166850282)]
 
 
 <a name="0.0.2"></a>
@@ -160,7 +160,7 @@
 
 ### Added
 
-- ✨ Support customization [[0a768ca](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/0a768caf7f6601a45077d7e5f365627b22ee4c1f)]
+- ✨ Support customization [[0a768ca](https://github.com/wakatime/Reply-Plugin-Prompt/commit/0a768caf7f6601a45077d7e5f365627b22ee4c1f)]
 
 
 <a name="0.0.1"></a>
@@ -168,4 +168,4 @@
 
 ### Added
 
-- 🎉 Initial [[4c94396](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/4c94396ade640284d87ee06a691e5e7a69e1a08f)]
+- 🎉 Initial [[4c94396](https://github.com/wakatime/Reply-Plugin-Prompt/commit/4c94396ade640284d87ee06a691e5e7a69e1a08f)]
