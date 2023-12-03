@@ -1,5 +1,27 @@
 # Changelog
 
+<a name="next"></a>
+## next
+
+### Added
+
+- ✅ Fix tests [[6bb5361](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/6bb53617b55aac4ed16daa4440e41978bebb518e)]
+- 👷‍♂️ Add deploy-nur CD [[a3462b5](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/a3462b5ed96a98395821b0a9d887f398434d1965)]
+
+### Changed
+
+- ⚡ Short output length [[8894a0f](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/8894a0f71ea7584f1daf0ca8562eaa8ddbcbe22a)]
+
+### Fixed
+
+- 💚 Fix AUR CI/CD [[9fde50c](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/9fde50c6aa48a7546614bd8a5f45670c69f663cf)]
+- ✏️ Fix the typo of version [[b2bb659](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/b2bb6598f71314e766ae3f16eb467f3b044bde31)]
+
+### Miscellaneous
+
+- 📝 Update README.md [[e3cc248](https://github.com/Freed-Wu/Reply-Plugin-Prompt/commit/e3cc2481056bf7065bb36fb6b6162ccd629448c8)]
+
+
 <a name="0.0.18"></a>
 ## 0.0.18 (2023-05-25)
 
