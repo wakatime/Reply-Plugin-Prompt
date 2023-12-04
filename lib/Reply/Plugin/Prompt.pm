@@ -51,7 +51,9 @@ sub section_wakatime {
     my $cmd = $wakatime_cmd;
     if ( $cmd =~ /%s/ ) {
         my $null    = $^O eq 'MSWin32' ? 'nul' : '/dev/null';
+        my $old     = $?;
         my $project = `git rev-parse --show-toplevel 2> $null`;
+        $? = $old;
         chomp $project;
         $project = abs_path getcwd if $project eq '';
         $project = basename $project;
