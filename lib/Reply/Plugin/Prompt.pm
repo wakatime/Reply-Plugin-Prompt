@@ -47,7 +47,7 @@ sub new {
     return $self;
 }
 
-sub wakatime {
+sub section_wakatime {
     my $cmd = $wakatime_cmd;
     if ( $cmd =~ /%s/ ) {
         my $null    = $^O eq 'MSWin32' ? 'nul' : '/dev/null';
@@ -57,13 +57,7 @@ sub wakatime {
         $project = basename $project;
         $cmd     = sprintf( $cmd, $project );
     }
-    system($cmd);
-}
-
-sub section_wakatime {
-    require threads;
-    my $thr = threads->new( \&wakatime );
-    $thr->detach();
+    open my $fh, '-|', $cmd;
 }
 
 sub section_result {
