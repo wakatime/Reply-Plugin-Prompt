@@ -54,6 +54,9 @@ This project provides a reply plugin to support:
 
 [![wakatime](https://user-images.githubusercontent.com/32936898/226532448-84086ab6-241a-45f0-b8c1-6db8a7bb3fcf.jpg)](https://wakatime.com)
 
+If there is a git repository, the project name can be achieved by git. Else use
+the base name of current working directory.
+
 ## Install
 
 ### [CPAN](https://metacpan.org/pod/Reply::Plugin::Prompt)

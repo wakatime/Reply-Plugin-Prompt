@@ -1,6 +1,6 @@
 {
   "name": "reply-plugin-prompt",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "reply plugin for powerlevel10k style prompt",
   "author": "Wu Zhenyu <wuzhenyu@ustc.edu>",
   "license": "GPLv3"
