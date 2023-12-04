@@ -37,7 +37,7 @@ my $insert_time    = ' %s';
 my $time_format    = '%H:%M:%S';  # time format
 my $prompt_char    = '❯ ';        # prompt character
 my $wakatime_cmd =
-'wakatime-cli --write --plugin=repl-reply-wakatime --entity-type=app --entity=perl --alternate-language=perl --project=%s';
+'wakatime-cli --write --plugin=repl-reply-wakatime --entity-type=app --entity=perl --alternate-language=perl --project=%s &';
 
 sub new {
     my $class = shift;
@@ -276,4 +276,4 @@ F<${XDG_CONFIG_PATH:-$HOME/.config}/reply/prompt.pl>:
     $time_format    = '%H:%M:%S';  # time format
     $prompt_char    = '❯ ';        # prompt character
     $wakatime_cmd =
-    'wakatime-cli --write --plugin=repl-reply-wakatime --entity-type=app --entity=perl --alternate-language=perl --project=%s';
+    'wakatime-cli --write --plugin=repl-reply-wakatime --entity-type=app --entity=perl --alternate-language=perl --project=%s &';
